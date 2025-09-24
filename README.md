@@ -1,2 +1,1 @@
 # PKSF-Private-Testnet
-# Tech

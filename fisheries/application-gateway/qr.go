@@ -4,9 +4,7 @@ package main
 import (
 	"context"
 	"crypto"
-	// "crypto/rand"
 	"crypto/x509"
-	// "encoding/pem"
 	"fmt"
 	"io"
 	"io/fs"
@@ -273,8 +271,8 @@ func createAsset(contract *client.Contract, productId string) error {
         "has_food_grade_package_ldpe_4": true,
         "storage_en": "Cold Storage Dhaka",
         "storage_bn": "Cold Storage Dhaka",
-        "washing_en": []string{"Filtered water", "Arsenic"},
-        "washing_bn": []string{"Filtered water", "Arsenic"},
+        "water_source_en": []string{"Filtered water", "Arsenic"},
+        "water_source_bn": []string{"Filtered water", "Arsenic"},
         "has_freezer_van_transportation": true,
         "cooking_temperature_en": "N/A",
         "cooking_temperature_bn": "N/A",

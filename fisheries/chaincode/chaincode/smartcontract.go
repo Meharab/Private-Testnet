@@ -30,8 +30,8 @@ type QRAsset struct {
 	HasFoodGradePackageLDPE4         bool     `json:"has_food_grade_package_ldpe_4"`
 	StorageEn                        string   `json:"storage_en"`
 	StorageBn                        string   `json:"storage_bn"`
-	WashingEn                        []string `json:"washing_en"`
-	WashingBn                        []string `json:"washing_bn"`
+	WaterSourceEn                    []string `json:"water_source_en"`
+	WaterSourceBn                    []string `json:"water_source_bn"`
 	HasFreezerVanTransportation      bool     `json:"has_freezer_van_transportation"`
 	CookingTemperatureEn             string   `json:"cooking_temperature_en"`
 	CookingTemperatureBn             string   `json:"cooking_temperature_bn"`
@@ -78,8 +78,8 @@ func (s *SmartContract) InitLedger(ctx contractapi.TransactionContextInterface) 
 			HasFoodGradePackageLDPE4: true,
 			StorageEn: "Cold Storage Dhaka",
 			StorageBn: "Cold Storage Dhaka",
-			WashingEn: []string{"Filtered water", "Arsenic"},
-			WashingBn: []string{"Filtered water", "Arsenic"},
+			WaterSourceEn: []string{"Filtered water", "Arsenic"},
+			WaterSourceBn: []string{"Filtered water", "Arsenic"},
 			HasFreezerVanTransportation: true,
 			CookingTemperatureEn: "N/A",
 			CookingTemperatureBn: "N/A",
